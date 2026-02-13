@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN - PRIME GAMING HT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white p-6">
+    <header class="flex justify-between items-center border-b border-red-600 pb-4 mb-8">
+        <h1 class="text-3xl font-black text-red-600 tracking-tighter">PRIME ADMIN PANEL</h1>
+        <button onclick="logout()" class="bg-gray-800 px-4 py-2 rounded text-sm hover:bg-red-900 transition">Soti</button>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section class="bg-[#111] p-6 rounded-xl border border-gray-800">
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                <span class="text-green-500">💰</span> Depo pou Valide
+            </h2>
+            <div id="admin-deposits" class="space-y-4">
+                <p class="text-gray-500 italic text-sm text-center">Pa gen depo an atant kounye a.</p>
+            </div>
+        </section>
+
+        <section class="bg-[#111] p-6 rounded-xl border border-gray-800">
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                <span class="text-blue-500">🎮</span> Verifikasyon Match (Escrow)
+            </h2>
+            <div id="admin-challenges" class="space-y-4">
+                <p class="text-gray-500 italic text-sm text-center">Pa gen match pou verifye pou moman an.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
