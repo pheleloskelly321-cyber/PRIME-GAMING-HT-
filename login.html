@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME GAMING HT - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b0e14] text-white flex items-center justify-center min-h-screen p-4">
+    <div class="bg-[#161b22] p-8 rounded-2xl shadow-2xl w-full max-w-md border border-blue-500/30 text-center">
+        <img src="lyen_logo_cloudinary" class="logo-gaming w-28 h-28 rounded-full mx-auto mb-6 object-cover border-2 border-blue-500">
+        <h1 class="text-2xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">PRIME GAMING HT</h1>
+        
+        <div id="auth-box" class="space-y-4 text-left">
+            <div>
+                <label class="text-xs text-gray-400 ml-1">Email</label>
+                <input type="email" id="email" class="w-full p-3 rounded-lg bg-[#0d1117] border border-gray-700 outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label class="text-xs text-gray-400 ml-1">Modpas</label>
+                <input type="password" id="password" class="w-full p-3 rounded-lg bg-[#0d1117] border border-gray-700 outline-none focus:border-blue-500">
+            </div>
+            
+            <div id="otp-section" class="hidden space-y-2">
+                <p class="text-sm text-yellow-500 font-bold text-center">Vire gad email ou pou kòd la</p>
+                <input type="text" id="otp-input" placeholder="000000" class="w-full p-3 rounded-lg bg-[#0d1117] border-2 border-yellow-600 text-center font-bold tracking-[1rem]">
+            </div>
+
+            <button onclick="handleAuth()" id="main-btn" class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold shadow-lg shadow-blue-900/40">KONEKTE</button>
+            <p class="text-sm text-center text-gray-400">Poko gen kont? <button onclick="toggleAuth()" class="text-blue-400 font-bold">Enskri</button></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
