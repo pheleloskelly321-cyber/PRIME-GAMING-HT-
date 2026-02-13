@@ -1,0 +1,19 @@
+/* style.css */
+body { background-color: #0b0e14; }
+
+.logo-gaming {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+    transition: 0.3s;
+}
+
+.logo-gaming:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 0 35px rgba(59, 130, 246, 0.9);
+}
+
+input:focus { border-color: #3b82f6 !important; }
+
+.hidden { display: none; }
+
+#chat-box::-webkit-scrollbar { width: 4px; }
+#chat-box::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
